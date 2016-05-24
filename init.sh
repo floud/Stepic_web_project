@@ -3,7 +3,3 @@ sudo /etc/init.d/nginx restart
 sudo ln -s /home/box/web/etc/hello.py   /etc/gunicorn.d/test
 cd /home/box/web/ask/ask/
 sudo gunicorn -c /home/box/web/etc/hello.py wsgi:application &
-
-sudo /etc/init.d/mysql start
-mysql -uroot -e "create database defaultdb;"
-mysql -uroot -e "CREATE USER 'floud' IDENTIFIED BY 'square';"
